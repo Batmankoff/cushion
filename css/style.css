@@ -202,7 +202,7 @@ body {
   justify-content: space-between;
 }
 .product__reviews {
-  color: #000000;
+  color: #2c2b31;
   font-size: 12px;
   line-height: normal;
 }
@@ -223,7 +223,7 @@ body {
   text-decoration-line: underline;
 }
 .product__title {
-  color: #000000;
+  color: #2c2b31;
   font-size: 19px;
   font-weight: 700;
   line-height: normal;
@@ -360,4 +360,13 @@ body {
 .choices[data-type*=select-one].is-open:after {
   content: url("../images/arrow-top.svg");
   margin: 0;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  z-index: 99;
+}
+
+.product__stars .jq-ry-container {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

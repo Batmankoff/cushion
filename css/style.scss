@@ -131,7 +131,7 @@ body {
     justify-content: space-between;
   }
   &__reviews {
-    color: $dark;
+    color: $default;
     font-size: 12px;
     line-height: normal;
   }
@@ -151,7 +151,7 @@ body {
     text-decoration-line: underline;
   }
   &__title {
-    color: $dark;
+    color: $default;
     font-size: 19px;
     font-weight: $font-weight-bold;
     line-height: normal;
@@ -280,4 +280,13 @@ body {
 .choices[data-type*='select-one'].is-open:after {
   content: url('../images/arrow-top.svg');
   margin: 0;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  z-index: 99;
+}
+
+.product__stars .jq-ry-container {
+  padding: 0;
 }

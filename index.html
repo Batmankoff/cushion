@@ -6,6 +6,10 @@
     <title>Document</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css"
     />
     <link
@@ -115,11 +119,7 @@
               </span>
             </div>
             <div class="product__stars">
-              <img
-                class="product__stars-icon"
-                src="images/stars.svg"
-                alt="icon stars"
-              />
+              <div class="star" data-rateyo-rating="5"></div>
               <span class="product__stars-count">(10)</span>
             </div>
           </div>
@@ -153,10 +153,14 @@
         </div>
       </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/productSwiper.js"></script>
     <script src="js/productSelect.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="js/stars.js"></script>
   </body>
 </html>
